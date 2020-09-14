@@ -25,22 +25,27 @@ const axios = require('axios');
 
 axios.get('https://lambda-times-api.herokuapp.com/articles')
     .then( result => {
+        // returns object, each value is an array of objects
         const articleDOM = result.data.articles;
        
         console.log(articleDOM);
 
-
+        // for..of 
         for (const [key, value] of Object.entries(articleDOM)) {
-            let i = 0;
+            
+            // each key "string"
             const keyForeach = key;
+
+            // each array of objects [{},{}]
             const valArrayObj = value;
 
-            console.log([keyForeach,valArrayObj]);
+
+            // for each array element run component to create DOM
             valArrayObj.forEach( (element) => {
                 cardMaker(element);
                 
             })
-            i++ ;
+            
           }
         
     })
