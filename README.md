@@ -27,14 +27,19 @@ Commit your code regularly and meaningfully. This helps both you (in case you ev
 Be prepared to demonstrate your understanding of this week's concepts by answering questions on the following topics. You might prepare by writing down your own answers before hand.
 
 1. What is the DOM?
+    DOM means Document Object Model. It is the browser's representation of a website's html markup (and CSS styles, etc).
 
 2. What is an event?
+    An event is any of several forms of user interaction with a webpage using a mouse or keyboard (click, dblclick, mouseover, mouseout, etc.).
 
 3. What is an event listener?
+    An event listener is a method in the DOM object (function) that takes at least two paramters; the event to listen for and a function to execute when the event is fired.
 
 4. Why would we convert a NodeList into an Array?
+    A NodeList does not not have access to Array methods, although it has .forEach. 
 
 5. What is a component?
+    A component is a class/constructor that creates DOM elements instead of js objects. When passed an object, it manipulates the DOM to change the webpage programmatically; without changing the HTML or CSS files.
 
 You are expected to be able to answer questions in these areas. Your responses contribute to your Sprint Challenge grade.
 
